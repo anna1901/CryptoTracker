@@ -11,6 +11,7 @@
 		3323AC5029915E6D00FE623C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3323AC4F29915E6D00FE623C /* ContentView.swift */; };
 		3323AC5529915E6F00FE623C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3323AC5429915E6F00FE623C /* Preview Assets.xcassets */; };
 		3323AC5C29915F5300FE623C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3323AC5B29915F5300FE623C /* Assets.xcassets */; };
+		3323AC5F2991619B00FE623C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3323AC5E2991619B00FE623C /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3323AC4F29915E6D00FE623C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3323AC5429915E6F00FE623C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3323AC5B29915F5300FE623C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../CryptoTrackerResources/Assets.xcassets; sourceTree = "<group>"; };
+		3323AC5E2991619B00FE623C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		3323AC4C29915E6D00FE623C /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				3323AC5D2991616F00FE623C /* Extensions */,
 				3323AC4D29915E6D00FE623C /* CryptoTrackerApp.swift */,
 				3323AC4F29915E6D00FE623C /* ContentView.swift */,
 				3323AC5B29915F5300FE623C /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				3323AC5429915E6F00FE623C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3323AC5D2991616F00FE623C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3323AC5E2991619B00FE623C /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				3323AC5029915E6D00FE623C /* ContentView.swift in Sources */,
 				3323AC4E29915E6D00FE623C /* CryptoTrackerApp.swift in Sources */,
+				3323AC5F2991619B00FE623C /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
