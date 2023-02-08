@@ -19,6 +19,7 @@
 		33C3401F2993C63A0093A87C /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3401E2993C63A0093A87C /* CoinRowView.swift */; };
 		33C340212993C6970093A87C /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C340202993C6970093A87C /* PreviewProvider.swift */; };
 		33C340232993D0670093A87C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C340222993D0670093A87C /* Double.swift */; };
+		33C34025299434DB0093A87C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C34024299434DB0093A87C /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		33C3401E2993C63A0093A87C /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		33C340202993C6970093A87C /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		33C340222993D0670093A87C /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		33C34024299434DB0093A87C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +69,11 @@
 		3323AC4C29915E6D00FE623C /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				3323AC4D29915E6D00FE623C /* CryptoTrackerApp.swift */,
 				3323AC5D2991616F00FE623C /* Extensions */,
 				33C3401B2992B57A0093A87C /* Models */,
 				3323AC632992924900FE623C /* Core */,
 				3323AC4F29915E6D00FE623C /* ContentView.swift */,
-				3323AC4D29915E6D00FE623C /* CryptoTrackerApp.swift */,
 				3323AC5B29915F5300FE623C /* Assets.xcassets */,
 				3323AC5329915E6F00FE623C /* Preview Content */,
 			);
@@ -126,6 +128,7 @@
 		3323AC662992928800FE623C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				33C34024299434DB0093A87C /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33C3401F2993C63A0093A87C /* CoinRowView.swift in Sources */,
+				33C34025299434DB0093A87C /* HomeViewModel.swift in Sources */,
 				3323AC5029915E6D00FE623C /* ContentView.swift in Sources */,
 				3323AC682992929E00FE623C /* HomeView.swift in Sources */,
 				3323AC4E29915E6D00FE623C /* CryptoTrackerApp.swift in Sources */,
