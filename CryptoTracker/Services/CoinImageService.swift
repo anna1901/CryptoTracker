@@ -7,20 +7,24 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 class CoinImageService {
-    @Published var image: Data? = nil
-    var coinSunbscription: AnyCancellable?
+    @Published var image: UIImage? = nil
+    var imageSubscription: AnyCancellable?
     
-    init(url: URL) {
-        getCoinImage(from: url)
+    init(urlString: String) {
+        getCoinImage(from: urlString)
     }
     
-    private func getCoinImage(from url: URL) {
-        coinSunbscription = NetworkingManager.download(url: url)
-            .sink(receiveCompletion: NetworkingManager.handleCompetion(completion:), receiveValue: { [weak self] data in
-                self?.image = data
-                self?.coinSunbscription?.cancel()
+    private func getCoinImage(from urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        
+        imageSubscription = NetworkingManager.download(url: url)
+            .tryMap({ UIImage(data: $0) })
+            .sink(receiveCompletion: NetworkingManager.handleCompetion(completion:), receiveValue: { [weak self] returnedImage in
+                self?.image = returnedImage
+                self?.imageSubscription?.cancel()
             })
     }
 }
