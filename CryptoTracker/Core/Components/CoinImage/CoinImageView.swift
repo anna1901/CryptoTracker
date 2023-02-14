@@ -10,8 +10,8 @@ import SwiftUI
 struct CoinImageView: View {
     @StateObject var vm: CoinImageViewModel
     
-    init(url: String) {
-        _vm = StateObject(wrappedValue: CoinImageViewModel(urlString: url))
+    init(coin: CoinModel) {
+        _vm = StateObject(wrappedValue: CoinImageViewModel(coin: coin))
     }
     
     var body: some View {
@@ -32,7 +32,7 @@ struct CoinImageView: View {
 
 struct CoinImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CoinImageView(url: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln&order=market_cap_desc&per_page=250&page=1&sparkline=true&price_change_percentage=24h")
+        CoinImageView(coin: dev.coin)
             .previewLayout(.sizeThatFits)
             .padding()
     }
