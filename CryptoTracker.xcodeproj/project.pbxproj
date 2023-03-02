@@ -37,6 +37,8 @@
 		33C93C5C299FB85000794896 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33C93C5A299FB85000794896 /* PortfolioContainer.xcdatamodeld */; };
 		33C93C5E299FB90700794896 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C93C5D299FB90700794896 /* PortfolioDataService.swift */; };
 		33C93C6F29A50AD700794896 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C93C6E29A50AD700794896 /* HapticManager.swift */; };
+		33CB240629B0BEB400632A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CB240529B0BEB400632A61 /* LaunchScreen.storyboard */; };
+		33CB240829B0C65600632A61 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB240729B0C65600632A61 /* LaunchView.swift */; };
 		33D77B11299B9DD40079931F /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D77B10299B9DD40079931F /* LocalFileManager.swift */; };
 		33D77B13299BDFED0079931F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D77B12299BDFED0079931F /* SearchBarView.swift */; };
 		33D77B15299BE5560079931F /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D77B14299BE5560079931F /* UIApplication.swift */; };
@@ -81,6 +83,9 @@
 		33C93C5B299FB85000794896 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		33C93C5D299FB90700794896 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		33C93C6E29A50AD700794896 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		33CB240229B0BE3800632A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		33CB240529B0BEB400632A61 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33CB240729B0C65600632A61 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		33D77B10299B9DD40079931F /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		33D77B12299BDFED0079931F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		33D77B14299BE5560079931F /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 		3323AC4C29915E6D00FE623C /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				33CB240229B0BE3800632A61 /* Info.plist */,
 				3323AC4D29915E6D00FE623C /* CryptoTrackerApp.swift */,
 				33C340292994484C0093A87C /* Utilities */,
 				3323AC5D2991616F00FE623C /* Extensions */,
@@ -177,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				3323AC692992936C00FE623C /* Components */,
+				33CB240329B0BE9800632A61 /* Launch */,
 				3323AC642992927500FE623C /* Home */,
 				339826F829A90D1A008970B5 /* Detail */,
 				33162C1329AFA60A006742D2 /* Settings */,
@@ -303,6 +310,23 @@
 			path = CoinImage;
 			sourceTree = "<group>";
 		};
+		33CB240329B0BE9800632A61 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				33CB240429B0BEA300632A61 /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		33CB240429B0BEA300632A61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33CB240529B0BEB400632A61 /* LaunchScreen.storyboard */,
+				33CB240729B0C65600632A61 /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CB240629B0BEB400632A61 /* LaunchScreen.storyboard in Resources */,
 				3323AC5529915E6F00FE623C /* Preview Assets.xcassets in Resources */,
 				3323AC5C29915F5300FE623C /* Assets.xcassets in Resources */,
 			);
@@ -389,6 +414,7 @@
 				33D77B19299D61E70079931F /* StatisticView.swift in Sources */,
 				33C3402E299529A40093A87C /* CoinImageView.swift in Sources */,
 				3323AC4E29915E6D00FE623C /* CryptoTrackerApp.swift in Sources */,
+				33CB240829B0C65600632A61 /* LaunchView.swift in Sources */,
 				33D77B15299BE5560079931F /* UIApplication.swift in Sources */,
 				3323AC6C299293A000FE623C /* CircleButtonView.swift in Sources */,
 				339826FE29A90D6A008970B5 /* DetailView.swift in Sources */,
@@ -542,10 +568,11 @@
 				DEVELOPMENT_TEAM = DM38AVA7BR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -575,10 +602,11 @@
 				DEVELOPMENT_TEAM = DM38AVA7BR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
