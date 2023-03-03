@@ -23,6 +23,7 @@ class CoinDetailDataService {
         
         coinDetailSunbscription = NetworkingManager.download(url: url)
             .decode(type: CoinDetailModel.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: NetworkingManager.handleCompetion, receiveValue: { [weak self] returnedCoinDetails in
                 self?.coinDetails = returnedCoinDetails
                 self?.coinDetailSunbscription?.cancel()
