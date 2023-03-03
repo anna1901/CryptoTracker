@@ -18,10 +18,14 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List {
-                developerSection
-                swiftfulThinkingSection
-                coinGeckoSection
-                applicationSection
+                    developerSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    swiftfulThinkingSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    coinGeckoSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    applicationSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
             }
             .font(.headline)
             .tint(.blue)
